@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск машины</title>
+    <style>
+        p
+        {
+            margin-bottom: 0;
+            margin-top: 0;     
+        }
+    </style>
+</head>
+<body>
+    <h1>Поиск машины</h1>
+    <form action="https://testform.stanislavsivin.ru/" method="POST">
+        <fieldset>
+            <legend>Выбор модели:</legend>
+            <label for="model">Выберите модель</label><br>
+                <select name="model" id="model">
+                    <option value="0">Lada</option>
+                    <option value="1">Москвич</option>
+                    <option value="2">УАЗ</option>
+                    <option value="3">BMW</option>
+                    <option value="4">Chery</option>
+                    <option value="5">Mersedes</option>
+                    <option value="6">Mazeratti</option>
+                    <option value="7">Fiat</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Характеристики машины:</legend>
+            <label for="boxSelection">Коробка</label><br>
+                <select name="boxSelection" id="boxSelection" size="4" multiple="multiple">
+                <option value="1">Механика</option>
+                <option value="2">Классический автомат</option>
+                <option value="3">Вариатор</option>
+                <option value="4">Робот</option>
+                </select><br><br>
+                <p><span>Пробег</span></p>
+                <input type="text" size="5" id="distanceStart" placeholder="от" name="distanceStart">
+                <input type="text" size="5" id="distanceStop" placeholder="до" name="distanceStop"> <br><br>
+                <p><span>Объем</span></p>
+                <input type="text" size="5" id="volumeStart" placeholder="от" name="volumeStart">
+                <input type="text" size="5" id="volumeStop" placeholder="до" name="volumeStop"> <br>
+        </fieldset>
+         <fieldset>
+            <legend>Ценовой сегмент машины:</legend>
+                <p>Цена</p>
+                <input type="text" size="5" id="priceStart" placeholder="от" name="priceStart">
+                <input type="text" size="5" id="priceStop" placeholder="до" name="priceStop"> <br>
+        </fieldset>
+        <input type="submit" value="Найти">
+        <input type="reset" value="Очистить">
+    </form>
+</body>
+</html>
