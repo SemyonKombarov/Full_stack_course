@@ -1,0 +1,39 @@
+body { 
+    background-color: #cecece; 
+    padding: 32px; 
+} 
+ 
+button { 
+    margin: 25px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    border: 1px solid lime; 
+    padding: 15px 35px; 
+} 
+ 
+button:hover {  /*общее изменение свойств при наведии на тег button*/
+    outline: 1px solid white; /*контур за границами вокруг элемента*/
+    outline-offset: -2px; /*отделение от границ этого контура на 2 пикселя */
+    cursor: pointer; /*меняет курсор со стрелки на указатель палец*/
+} 
+ 
+.button1 {
+    background-color: #2563E9; /*базовый цвет на кнопку1*/
+    transition: 1s; /*задается переход 1сек в котором будет изменение при наведении мыши за счет свойства :hover*/
+} 
+ 
+.button1:hover { 
+    background-color: #4478E9; /*конечный цвет при наведении*/
+} 
+ 
+.button2 { 
+    background-color: #2563E9; /*базовый цвет на кнопку2*/
+    transition: 1s; /*задается переход 1сек в котором будет изменение при наведении мыши за счет свойства :hover*/
+    transition-property: background; /*свойства перехожа только к свойству бэкграунд, остальные свойства будут менять мгновенно*/
+} 
+ 
+.button2:hover { 
+    background-color: #E95AD1;   
+    outline: none; /*отключение анимации контура за границами кнопки при наведении курсора*/
+}
+

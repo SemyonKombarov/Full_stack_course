@@ -1,0 +1,83 @@
+* {
+    padding: 0; 
+    margin: 0; 
+} 
+ 
+.wrap { /* Gараметры ячейки отображающие анимацию*/
+    width: 200px; 
+    height: 150px; 
+    outline: 1px solid #000; 
+    display: inline-block; 
+    margin: 35px 50px; 
+} 
+ 
+.wrap > div { /*Cтили для потомков .wrap*/
+    width: 200px; 
+    height: 150px; 
+    background: rgba(144, 235, 242, 0.5); 
+    display: inline-block; 
+    position: relative; 
+    z-index: 2; 
+    transition: transform 1s; 
+    
+} 
+ /* Стили для span-элементов(текст) внутри div-элементов .wrap */
+.wrap > div > span { 
+    position: absolute; 
+    top:45%; 
+    width: 100%; 
+    text-align: center;
+}
+
+/* Трансформации при наведении для различных классов */
+
+/* Сдвиг по оси X на 50px при наведении */
+
+.translateX:hover { 
+    transform: translateX(50px);
+    
+} 
+/* Сдвиг по оси Y на 50px при наведении */
+.translateY:hover { 
+    transform: translateY(50px); 
+} 
+/* Сдвиг по обеим осям при наведении */
+.translate:hover { 
+    transform: translate(50px, 50px); 
+} 
+/* Масштабирование по оси X с отражением при наведении */
+.scaleX:hover { 
+    transform: scaleX(-1); 
+} 
+/* Масштабирование по оси Y с отражением при наведении */
+.scaleY:hover { 
+    transform: scaleY(-1); 
+} 
+ /* Увеличение масштаба по оси X в 1.5 раза при наведении */
+.scaleX15:hover { 
+    transform: scaleX(1.5); 
+} 
+ /* Масштабирование с разными коэффициентами по осям */
+.scale:hover {
+     transform: scale(1.5, 0.5); 
+} 
+ /* Полное вращение элемента при наведении */
+.rotate:hover { 
+    transform: rotate(360deg); 
+} 
+ /* Наклон элемента по оси X при наведении */
+.skewX:hover { 
+    transform: skewX(45deg); 
+} 
+ /* Наклон элемента по оси Y при наведении */
+.skewY:hover { 
+    transform: skewY(-45deg); 
+} 
+ /* Наклон элемента по обеим осям при наведении */
+.skew:hover { 
+    transform: skew(-20deg, 20deg); 
+} 
+ /* Комплексная трансформация с использованием матрицы */
+.matrix:hover { 
+    transform: matrix(1.5,0,0.5,1.2,50,0); 
+} 

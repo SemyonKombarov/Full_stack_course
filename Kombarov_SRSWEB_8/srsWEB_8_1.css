@@ -1,0 +1,65 @@
+
+
+body { 
+    background-color: #cecece; /*Фон внтури тега body*/
+    padding: 32px; /*отступ*/
+} 
+ 
+.container {
+    display: flex; /*контейнер для отображения с помощью flex*/
+    justify-content: center; /*размещение по центру*/
+}
+
+button { 
+    margin: 25px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    border: 1px solid lime; 
+    padding: 15px 35px; 
+} 
+ 
+button:hover { 
+    outline: 1px solid white; /*контур за границами вокруг элемента*/
+    outline-offset: -2px; /*отделение от границ этого контура на 2 пикселя */
+    cursor: pointer; /*меняет курсор со стрелки на указатель палец*/
+} 
+ 
+.button1 { 
+    background-image: linear-gradient(#76B9CC, #97cc76); /* задает сбалансированный линейный градиент из двух цветов сверху вниз (по умолчанию) внутри границ кнопки*/
+} 
+ 
+.button2 { 
+    background-image: linear-gradient(#76B9CC, #CC208A, #97cc76); /* задает сбалансированный линейный градиент из трех цветов сверху вниз внутри (по умолчанию) границ кнопки*/
+} 
+ 
+.button3 { 
+    background-image: linear-gradient(#76B9CC, #CC208A, #97cc76, #B34EE9); /* задает сбалансированный линейный градиент из четырех цветов сверху вниз (по умолчанию) внутри границ кнопки*/
+} 
+ 
+.button4 { 
+    background-image: linear-gradient(blue 5%, lime 30%, #97cc76 80%, #B34EE9 90%); /* задает несбалансированный линейный градиент из четырех цветов сверху вниз (по умолчанию) внутри границ кнопки с учётом процентного наложения */
+} 
+ 
+.button5 { 
+    background-image: linear-gradient(blue 5px, lime 15px, white 30px, black 50px); /*градиентный фон с фиксированными размерами цветовых зон*/
+} 
+ 
+.button6 { 
+    background-image: linear-gradient(25deg, blue, lime); /*линейная градиентная заливка под углом 25 градусов (по часовой стрелке относительно 12 часов)*/
+    } 
+ 
+.button7 { 
+    background-image: radial-gradient(red 0%, yellow 30%); /*радиальная градиентная заливка относительна центра фигуры (по умолчанию)*/
+} 
+ 
+.button8 { 
+    background-image: radial-gradient(at top right, red, yellow);  /*радиальная градиентная заливка, где распределение идет относительно правого верхнего угла*/
+} 
+ 
+.button9 { 
+    background-image: radial-gradient(farthest-corner at 25% 50%, #f35 0%, #43e 100%); /*радиальная градиентная заливка, где распределение идет со смещением относительно левого и верхнего края фигуры по горизонтали и после по вертикали*/
+} 
+ 
+.button10 { 
+    background-image: radial-gradient(15px 15px at 85% 25%, #f35 0%, #43e 100%); /*задается размер элипса градиента и относителльно верхнего и левого края объекта задается размещение центра радиального градиента */
+} 

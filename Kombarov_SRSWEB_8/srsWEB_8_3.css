@@ -1,0 +1,45 @@
+body {   
+    background-color: #cecece; /*цвет фона*/
+    padding: 0; /*отступы*/
+} 
+ 
+div { /*контейнер являющийся анимированным квадратным блоком*/
+    width: 40px; /*ширина*/
+    height: 40px; /*высота*/
+    position: relative; /*Позволяет перемещать элемент относительно его нормального положения*/
+    left: 10px; /*смещение влево*/
+    transition: 1s; /*продолжительнойсть анимации*/
+} 
+ 
+.container {    /*Задается контейнер занимающий полную ширину экрана и высоту в соответсвтии с содержимым, при наведении в область которорого отрабатывает hover*/
+    width: 100%; 
+    height: 100%; 
+} 
+ 
+.container:hover div { 
+    left: 500px; /*при наведении все элементы сдвигаются вправо относительно левого края*/
+} 
+ 
+
+/*Дальше для каждого отдельного класса будут для контейнера div будут указаны функции плавности при передвижении элемента и цвет для отличия друг от друга*/
+
+.ease { 
+    background-color: blue; /*цвет кубика*/
+    transition-timing-function: ease; /*функция плавности элемента*/
+} 
+.linear { 
+    background-color: lime; /*цвет кубика*/
+    transition-timing-function: linear; /*функция плавности элемента*/
+} 
+.ease-in { 
+    background-color: mediumseagreen;/*цвет кубика*/
+    transition-timing-function: ease-in; /*функция плавности элемента*/
+} 
+.ease-out { 
+    background-color: orangered; /*цвет кубика*/
+    transition-timing-function: ease-out; /*функция плавности элемента*/
+} 
+.ease-in-out { 
+    background-color: darkviolet; /*цвет кубика*/
+    transition-timing-function: ease-in-out; /*функция плавности элемента*/
+}
