@@ -11,9 +11,9 @@ h1 {
     margin: 35px auto; 
     text-align: center; 
 } 
- 
+ /*Стили карточки*/
 .container__persona { 
-    perspective: 1000px; 
+    perspective: 1000px; /*задание перспективы*/
     width: 250px; 
     height: 300px; 
     margin: 0 15px; 
@@ -28,23 +28,23 @@ h1 {
     transition: 1s; 
     transform-style: preserve-3d; 
 } 
- 
+ /*эффект при наведении, поаорт на 180 градусов*/
 .container__persona:hover .persona { 
  transform: rotateY(180deg); 
  } 
- 
+ /*Стили лицевой стороны*/
 .persona__foto {
-       width: 250px; 
+    width: 250px; 
     height: 300px; 
-    overflow: hidden; 
-    z-index: 2; 
+    overflow: hidden; /* Скрывает части контента, выходящие за границы */
+    z-index: 2; /*уровень наложения (типа слой)*/
     position: absolute; 
     top: 0; 
     left: 0; 
-    backface-visibility: hidden; 
+    backface-visibility: hidden;  /* Скрывает обратную сторону при повороте */ 
     border-radius: 15px; 
 } 
- 
+/*стили обратной стороны (ссылки)*/
 .persona__info { 
     background-color: #000; 
     width: 250px; 
@@ -63,14 +63,14 @@ h1 {
     padding-top: 15px; 
     color: #f3f3f3; 
 } 
- 
+ /*стили ссылок*/
 .persona__info > a { 
     color: #f3f3f3; 
     display: block; 
     margin: 20px auto; 
     text-decoration: none; 
 } 
- 
+ /*стили иконок*/
 .persona__info > a > i { 
     color: #fff; 
     font-size: 32px; 

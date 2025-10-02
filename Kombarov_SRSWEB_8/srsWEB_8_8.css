@@ -4,13 +4,13 @@
 } 
  
 body { 
-    perspective: 900px; 
-    perspective-origin: center -5em; 
+    perspective: 900px; /*глубина перспективы*/
+    perspective-origin: center -5em; /*смещение перспективы по х по центру по у на 5ем*/
 } 
  
 .container { 
-    transform-style: preserve-3d; 
-    animation: rotate 10s infinite linear; 
+    transform-style: preserve-3d; /*что-то для сохранения зд пространства*/
+    animation: rotate 10s infinite linear; /*вращение по параметрам*/
     display: inline-block; 
     width: 200px; 
     height: 200px; 
@@ -19,11 +19,11 @@ body {
     left:250px; 
 } 
  
-@keyframes rotate {
-    100% { 
+  @keyframes rotate {
+    100% { /*полный обор вокруг вертикальной оси*/
     transform: rotate3d(0, 1, 0, 360deg); 
   } 
-} 
+  } 
  
 div.side { 
     width: 200px; 
@@ -41,25 +41,42 @@ div.side {
  
 .left { 
   transform: translateX(-100px) rotateY(90deg) translateX(100px); 
+  /* Трансформации: 
+     - Сдвиг влево на 100px 
+     - Поворот на 90 градусов вокруг оси Y
+     - Возврат на исходную позицию по X */
   background: url("images/pic2.png"); 
 } 
  
 .right { 
   transform: translateX(100px) rotateY(90deg) translateX(100px); 
+  /* Трансформации:
+     - Сдвиг вправо на 100px
+     - Поворот на 90 градусов вокруг оси Y  
+     - Возврат на исходную позицию по X */
   background: url("images/pic3.png"); 
 } 
  
 .up { 
   transform: translateY(-100px) rotateX(90deg) translateY(-100px); 
+  /* Трансформации:
+     - Сдвиг вверх на 100px
+     - Поворот на 90 градусов вокруг оси X
+     - Дополнительный сдвиг для правильного позиционирования */
   background: url("images/pic4.png"); 
 } 
  
 .down { 
   transform: translateY(100px) rotateX(90deg) translateY(-100px); 
+  /* Трансформации:
+     - Сдвиг вниз на 100px
+     - Поворот на 90 градусов вокруг оси X
+     - Дополнительный сдвиг для правильного позиционирования */
   background: url("images/pic5.png"); 
 } 
  
 .back { 
     transform: translateZ(-200px); 
+    /* Сдвиг по оси Z на -200px (вглубь) */
     background: url("images/pic6.png"); 
 }

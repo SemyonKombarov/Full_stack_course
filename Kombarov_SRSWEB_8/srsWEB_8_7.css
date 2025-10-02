@@ -3,10 +3,10 @@
     margin: 0; 
 } 
  
-@keyframes rotate { 
+@keyframes rotate { /* Анимация с вращением элемента */
   100% { transform: rotate(360deg); } 
 } 
- 
+ /* Стили для контейнера с классом .wrap*/
 .wrap { 
     width: 200px;
     height: 150px; 
@@ -14,7 +14,7 @@
     display: inline-block; 
     margin: 35px 50px; 
 } 
- 
+ /* Стили для div-элементов, которые являются прямыми потомками .wrap */
 .wrap > div { 
     width: 200px; 
     height: 150px; 
@@ -24,7 +24,7 @@
     z-index: 2; 
     animation: rotate 6s linear infinite; 
 } 
- 
+ /*Стиль для текста внутри div-элемента*/
 .wrap > div > span { 
     position: absolute; 
     top:45%; 
@@ -33,16 +33,16 @@
 } 
  
 .element-1 { 
-    transform-origin: 50% 50%; 
+    transform-origin: 50% 50%; /* Точка вращения - центр элемента (по умолчанию) */
 }
 .element-2 { 
-    transform-origin: top left; 
+    transform-origin: top left; /* Точка вращения - левый верхний угол */
 } 
  
 .element-3 { 
-    transform-origin: 100% 0%; 
+    transform-origin: 100% 0%; /* Точка вращения - правый верхний угол */
 } 
  
 .element-4 { 
-    transform-origin: 50px 50px; 
+    transform-origin: 50px 50px; /* Точка вращения - точка с координатами 50px от левого края и 50px от верха */
 }
