@@ -1,0 +1,42 @@
+.body, html {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 500px;
+    color: silver;
+}
+.header::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+.menu {
+    width: 100%;
+}
+
+.container .menu .menu__item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 200;
+}
+.container .menu .menu__item:hover {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.main_block {
+    display: flex;
+    justify-content: center;
+}
