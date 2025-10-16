@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Задание 6.2. Доступ к узлам DOM через атрибут name</title>
+</head>
+<body>
+<label for="male"><input id="male" type="radio" name="pol" value="male" checked>Мужской</label><br>
+<label for="female"><input id="female" type="radio" name="pol" value="female">Женский</label><br>
+<label for="unknown"><input id="unknown" type="radio" name="pol" value="unknown">Не указан</label><br>
+<script>
+    {   
+        // {'male': {status: 'checked'}, 'female': {status : 'false'}, 'unknown': {status: 'false'}}
+        let output = {};
+        function getForm() {
+            let lst = document.getElementsByName('pol');
+
+            for (let item of lst) {
+                if (item.checked == true) {
+                    let x = 'checked';
+                    output[item.id] = {"status":x}
+                } else {
+                    output[item.id] = {"status":"false"}
+                }
+                
+            }
+            // console.log(output)
+            return output
+        }
+        getForm()
+    }
+ </script>
+</body>
+</html>

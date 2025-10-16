@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Задание 6.5. Добавление элементов на страницу</title>
+</head>
+<body>
+
+<ul class="list"> </ul>
+<script>
+    function buildNames(list,element) {
+        const targetElement = document.getElementsByClassName(element)[0];
+        if (!targetElement) {
+            // console.error(`Элемент с классом "${elementClass}" не найден`);
+            // console.log(228)
+            return false;
+            
+        } else {
+        for (item of list){
+            let li_element = document.createElement("li");
+            li_element.innerText = item;
+            // console.log(li_element);
+            // console.log(document.getElementsByClassName(element))
+            // console.log(document.getElementsByClassName(element)[0])
+            document.getElementsByClassName(element)[0].appendChild(li_element);
+            // console.log(item)
+            
+        }  
+        // console.log(222)  
+        return true;  
+          
+        }
+    }
+    buildNames(['Андрей', 'Дима', 'Нина', 'Света', 'Стас'], 'list');
+</script>
+</body>
+</html>

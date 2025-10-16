@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {// Правильно: параметры добавляются к каждой куки
+            "use strict";
+
+        document.cookie = "admin=cock; max-age=120";
+        document.cookie = "bebra=vpn; max-age=120";
+        
+        function getCookies() {
+            let cookies = document.cookie;
+            console.log(cookies);
+        }
+        
+        getCookies();
+    }
+    </script>
+</body>
+</html>

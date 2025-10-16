@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Задание 6.3. Доступ к узлам DOM через имя тега</title>
+
+</head>
+<body>
+<form>
+<label>
+Введите Ваше имя<br/>
+<input type="text" id="name" size="80px">
+</label><br>
+<label>
+Введите Вашу фамилию<br/>
+<input type="text" id="surname" size="80px">
+</label><br>
+<label>
+Укажите Ваш возраст<br/>
+<input type="text" id="age" size="80px">
+</label><br>
+<div>
+<p>Укажите Ваш пол:</p>
+<label for="male"><input id="male" type="radio" name="sex" value="male" checked>Мужской</label><br>
+<label for="female"><input id="female" type="radio" name="sex" value="female">Женский</label><br>
+<label for="unknown"><input id="unknown" type="radio" name="sex" value="unknown">Не указан</label>
+</div>
+<div>
+<button type="button" onclick="getForm()">Отправить данные</button>
+<input type="reset" value="Очистить форму">
+</div>
+</form>
+<script>
+    // {"name":"Станислав","surname":"Сивинский","age":"29","sex":{"0":{"value":"male","status":"checked"},"1":{"value":"female","status":"false"},"2":{"value":"unknown","status":"false"}}}
+        function getForm () {
+            let output = {};
+            let input = document.getElementsByTagName('input');
+            output.name = document.getElementById('name').value;
+            output.surname = document.getElementById('surname').value;
+            output.age = document.getElementById('age').value;
+            output.sex = {};
+            let sexInputs = document.querySelectorAll('input[name="sex"]');
+            sexInputs.forEach((input, index) => {
+                output.sex[index] = {
+                value: input.value,
+                status: input.checked ? 'checked' : 'false'
+               };
+            });
+        
+        
+            console.log(JSON.stringify(output, null, 2));
+
+            return output;
+        }
+        // getForm();
+
+</script>
+</body>
+</html>
