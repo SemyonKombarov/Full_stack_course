@@ -1,0 +1,134 @@
+/*fonts*/
+@font-face {
+    font-family: "fa-brands";
+    src: url("fonts/fa-brands-400.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "fa-regular";
+    src: url("fonts/fa-regular-400.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "fa-solid";
+    src: url("fonts/fa-solid-900.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "fontawesome-webfront";
+    src: url("fonts/fontawesome-webfont.ttf");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("fonts/FontAwesome.otf");
+}
+
+@font-face {
+    font-family: "philosopher-bold";
+    src: url("fonts/Philosopher-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "philosopher-regular";
+    src: url("fonts/Philosopher-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url("fonts/Roboto-Italic.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("fonts/Roboto-Medium.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+/*header*/
+.header {
+    background-color: #008daa;
+    height: 100px;
+    box-shadow:0 3px 3px rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.container_with_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding-left: 250px;
+    text-decoration: none;
+}
+
+.link_to_center {
+    padding-left: 62px;
+    color: #d4d0c8;
+    font-size: 23px;
+    font-family: "Roboto-Medium";
+    letter-spacing: 0.5px;
+}
+.link_to_center:hover {
+    color: #eeeeed;
+}
+.links_header_vk {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url("img/vk-gray.png");
+    background-size: cover;
+    /* padding-left: 100px; */
+}
+
+.links_header_vk:hover {
+    background-image: url("img/vk-white.png");
+}
+
+.links_header_fb {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url("img/fb-gray.png");
+    background-size: cover;
+}
+
+.links_header_fb:hover {
+    background-image: url("img/fb-white.png");
+}
+
+.links_header_inst {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url("img/inst-gray.png");
+    background-size: cover;
+}
+
+.links_header_inst:hover {
+    background-image: url("img/inst-white.png");
+}
+
+.links_header_tw {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url("img/tw-gray.png");
+    background-size: cover;
+}
+
+.links_header_tw:hover {
+    background-image: url("img/tw-white.png");
+}
