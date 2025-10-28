@@ -348,6 +348,81 @@
 
 /*QUESTIONS*/
 
+.title_questions {
+    font-family: "Philosopher-Bold";
+    padding-top: 127px;
+    font-size: 60px;
+    color: #005c7d;
+    margin-bottom: 24px;
+}
+
+.accordion-custom {
+            
+            margin: 0 auto;
+}
+
+.question-header {
+    font-weight: 500;
+    padding: 2rem 0rem 0rem 6.25rem;
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: "Philosopher-Regular";
+    color: #008daa;
+    font-size: 25px;
+}
+
+.question-header:focus {
+    box-shadow: none;
+    outline: none;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 1px;
+    background-color: #fff;
+}
+.accordion-body {
+    padding: 0rem 1.25rem 1.5rem 8.5rem;
+    background-color: #fff;
+    font-family: "Roboto-Italic";
+    color: #005c7d;
+    font-size: 18px;
+    line-height: 24px;
+}
+.question-text {
+    flex: 1;
+    
+}
+.arrow-left {
+    min-width: 20px;
+    text-align: center;
+}
+
+.ask {
+    font-family: "Philosopher-Bold";
+    color: #008daa;
+    font-size: 36px;
+    padding-top: 47px;
+    padding-left: 8px;
+    margin-bottom: 32px;
+}
+
+.ask_link {
+    font-family: "Philosopher-Bold";
+    color: #005c7d;
+    font-size: 36px;
+    padding-top: 47px;
+    padding-left: 8px;
+}
+
+.ask_link:hover {
+    color: #eb477b;
+}
 
 /*FEEDBACK*/
 .title_feedback {
