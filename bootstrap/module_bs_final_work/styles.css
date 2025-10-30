@@ -70,7 +70,7 @@
 /*header*/
 .header {
     background-color: #008daa;
-    height: 100px;
+    min-height: 100px;
     box-shadow:0 3px 3px rgba(0, 0, 0, 0.4);
     position: relative;
 }
@@ -148,7 +148,7 @@
 /*Main block titul*/
 
 .main_block_titul {
-    height: 979px;
+    min-height: 979px;
     background-color: #eeeeed;
     background-image: url(img/design-2461957_1920.png);
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@
 /*about_course*/
 
 .main_grey {
-    height: 1080px;
+    min-height: 1080px;
     background-color: #eeeeed;
 }
 
@@ -306,7 +306,7 @@
 /*benefits*/
 
 .main_white {
-    height: 1080px;
+    min-height: 1080px;
 }
 
 .title_benefits {
@@ -321,8 +321,10 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding-top: 56px;
-    padding-left: 342px;
+    padding-top: 3.4rem;
+    padding-left: 21.4rem;
+    margin: 0 auto;
+    
     gap: 51px;
 }
 
@@ -395,9 +397,13 @@
     line-height: 24px;
 }
 .question-text {
-    flex: 1;
-    
+    flex: 1;    
 }
+
+.question-text:hover {
+    text-decoration: underline;
+}
+
 .arrow-left {
     min-width: 20px;
     text-align: center;
@@ -433,6 +439,53 @@
     color: #005c7d;
 }
 
+.material-symbols-outlined.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.feedback_text {
+    font-family: "Roboto-Italic";
+    color: #005c7d;
+    padding: 5.7rem 10.25rem 0rem 9.9rem;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 24px;
+    /* position: relative; */
+}
+
+.arrow_feedback {
+    font-size: 60px;
+    color: #d4d0c8;
+}
+
+.arrow_feedback:hover {
+    cursor: pointer;
+}
+
+.foto {
+    background-image: url(img/voroncova.jpg);
+    height: 110px;
+    width: 110px;
+    background-size: cover;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    
+}
+
+.foto_pos {
+    padding-left: 68px;
+    
+}
+
+.foto_text_pos {
+    padding-left: 71px;
+    padding-top: 14px;
+}
+
+.h2 {
+    font-family: "Philosopher-Regular";
+    color: #008daa;
+}
 /*CONTACTS*/
 .main_contacts {
     height: 904px;
@@ -443,7 +496,100 @@
     padding-top: 127px;
     font-size: 60px;
     color: #005c7d;
+    margin-bottom:107px;
 }
+
+.arrow {
+    width: 253px;
+    height: 143px;
+}
+
+.row_with_arrow {
+    gap: 100px;
+}
+
+.row_with_arrow p {
+    font-family: "Roboto-Medium";
+    font-size: 29px;
+    color: #005c7d;
+    margin: 0;
+}
+
+.row_with_arrow a {
+    font-family: "Roboto-Medium";
+    font-size: 29px;
+    color: #008daa;
+}
+
+.row_with_arrow a:hover {
+    color: #eb477b;
+}
+
+.we_in_social_media {
+    font-size: 30px;
+    color: #005c7d;
+    font-family: "Roboto-Medium";
+    padding-top: 81px;
+    padding-bottom: 20px;
+}
+
+.container_with_links_blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 12px;
+}
+
+.links_header_vk_blue {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-image: url("img/vk-blue.png");
+    background-size: cover;
+   
+}
+
+.links_header_vk_blue:hover {
+    background-image: url("img/vk-pink.png");
+}
+
+.links_header_fb_blue {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-image: url("img/fb-blue.png");
+    background-size: cover;
+}
+
+.links_header_fb_blue:hover {
+    background-image: url("img/fb-pink.png");
+}
+
+.links_header_inst_blue {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-image: url("img/inst-blue.png");
+    background-size: cover;
+}
+
+.links_header_inst_blue:hover {
+    background-image: url("img/inst-pink.png");
+}
+
+.links_header_tw_blue {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-image: url("img/tw-blue.png");
+    background-size: cover;
+}
+
+.links_header_tw_blue:hover {
+    background-image: url("img/tw-pink.png");
+}
+
 
 /*FOOTER*/
 
