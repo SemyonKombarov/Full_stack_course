@@ -1,0 +1,249 @@
+/*HEADER*/
+
+.header {
+    background-color: #040440;
+    min-height: 88px;
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование по горизонтали */
+}
+
+.wrap-title {
+    padding-left: 104px;
+}
+
+.wrap-title__text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    line-height: 19px;
+}
+
+.block-menu {
+    display: flex;
+    flex-direction: row;
+    gap:88px;
+    padding-left: 595px;
+}
+
+.block-menu__item {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+.wrap-btn {
+    padding-left: 118px;
+}
+
+.header-btn {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    background-color:#c93555;
+    color: #fff;
+    border-radius: 42px;
+    padding: 20px 47px;
+    border: none;
+}
+
+/*TITUL*/
+
+.titul  {
+    background-image: url(фон.png);
+    background-size: cover;
+    height: 968px;
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.wrap-titul {
+    padding-left: 355px;
+    padding-top: 265px;
+}
+
+.block-profession__rectangle {
+    background-color: #c93555;
+    height: 8px;
+    width: 120px;
+}
+
+.block-profession__item {
+    color:#c93555;
+    padding-top: 12px;
+    font-size: 23px;
+}
+
+.block-profession__title {
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 59px;
+    padding-top: 42px;
+    letter-spacing: 1px;
+}
+
+.block-profession__subtitle {
+    font-size: 24px;
+    color: #fff;
+    font-weight:medium;
+    font-family: Helvetica, sans-serif;
+    padding-top: 40px;
+    letter-spacing: 1px;
+}
+
+.block-profession__subtitle_menu {
+    padding: 0;
+}
+
+.block-profession__menu__item__title {
+    font-weight: 100;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.block-profession__wrap-btn {
+    padding-top: 70px;
+}
+
+.header-btn_on-titul {
+    text-transform: capitalize;
+    padding: 24px 63px;
+}
+
+.block-profession__menu {
+    display: flex;
+    gap: 93px;
+    padding-top: 49px;
+}
+
+/*sys-adm*/
+
+.sys-adm-block {
+    background-color: #040440;
+    background-image: url(картинка.png);
+    background-repeat: no-repeat;
+    height: 695px;
+    margin: 0 auto;
+    width: 1920px;
+    background-position: 27.4% 41.8%;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.content {
+    padding-top: 3px;
+}
+
+.content__title {
+    color: #fff;
+    font-size: 30px;
+    font-weight:bold;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.content__text {
+    color: #fff;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    line-height: 37px;
+    padding-top: 47px;
+    width: 805px;
+}
+
+
+.sys-adm-block__wrap {
+    padding-left: 956px;
+    padding-top: 104px;
+}
+
+.block-profession__rectangle_vertical {
+    width: 8px;
+    height: 65px;
+    flex: none;
+}
+
+/*about-course*/
+
+.about-course {
+    background-color: #130b5b;
+    height: 826px;
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.about-course_wrap {
+    padding-top: 70px;
+    padding-left: 351px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.content__text_about-course {
+    width: 1200px;
+}
+
+.content__text_about-course-1 {
+    width: auto
+}
+
+.content-block__row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.header-btn_about-course {
+    height: 155px;
+    width: 537px;
+    font-weight: bold;
+    border:1px dashed #000; 
+    font-size: 30px;
+     border-radius: 30px;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #040440;
+    height: 115px;
+    margin: 0 auto;
+    width: 1920px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.footer__text {
+    font-size: 24px;
+    color: #fff;
+}
